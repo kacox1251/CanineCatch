@@ -32,11 +32,11 @@ $("#searchRecipes").on("click", function() {
             var drinkName = $("<h5>");
             var recipeBtn = $("<button>");
             //give the div an attr called data-drink-id and give responose.id
-            drinkDiv.attr("data-drink-id", limit.idDrink);
+            drinkDiv.attr("data-drink-id", limit[i].idDrink);
             //change img src to response.drink[i].strDrinkThumb
-            drinkThumb.attr("src", limit.strDrinkThumb);
+            drinkThumb.attr("src", limit[i].strDrinkThumb);
             //change name text to response.drink[i].strDrink
-            drinkName.text(limit.strDrink);
+            drinkName.text(limit[i].strDrink);
             //there will be a button to search the drink id or cocktail name
             //give button class
             recipeBtn.text("recipe");
